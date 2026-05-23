@@ -103,8 +103,6 @@ python edit_memit.py --data_path data/knowedit/ZsRE/zsre_500_final.json --hparam
 
 ### 任务 4：评估已有结果
 
-如果不重新运行实验，也可以直接对现有结果文件做汇总分析。
-
 汇总单个结果文件：
 
 ```powershell
@@ -121,7 +119,7 @@ python evaluate.py --path results/memit/memit_batch_20260519_220300.json
 
 ## 保留的结果
 
-精简后的提交包为每个主要实验阶段保留一个最终结果文件，以及可选的加分项任务5的输出：
+每个主要实验阶段保留一个最终结果文件，以及可选的加分项任务5的输出：
 
 - 基线：`results/baseline/baseline_20260519_191521.json`
 - ROME：`results/rome/rome_single_20260519_210423.json`
