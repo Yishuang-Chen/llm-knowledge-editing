@@ -1,0 +1,152 @@
+{
+  "task": "rome_single",
+  "method": "ROME",
+  "model_name": "Qwen/Qwen2.5-0.5B",
+  "hparams_path": "D:\\llmknowledge\\configs\\rome_qwen2.5_0.5b.yaml",
+  "data_path": "D:\\llmknowledge\\task2_showcase_kazakhstan.json",
+  "device": "cuda:0",
+  "dtype": "auto",
+  "max_new_tokens": 48,
+  "summary": {
+    "pre": {
+      "n_samples": 1,
+      "efficacy_es": 1.0,
+      "generalization_ps": 1.0,
+      "locality_ns": 1.0,
+      "old_fact_hit_rate": 0.0
+    },
+    "post": {
+      "n_samples": 1,
+      "efficacy_es": 1.0,
+      "generalization_ps": 1.0,
+      "locality_ns": 1.0,
+      "old_fact_hit_rate": 0.0
+    },
+    "delta": {
+      "efficacy_es_delta": 0.0,
+      "generalization_ps_delta": 0.0,
+      "locality_ns_delta": 0.0
+    },
+    "edit_time_seconds_mean": 1.4300305000506341,
+    "edit_time_seconds_total": 1.4300305000506341,
+    "peak_memory_gb_max": 4.567477226257324
+  },
+  "records": [
+    {
+      "source_index": 0,
+      "subject": "Kazakhstan",
+      "edit_time_seconds": 1.4300305000506341,
+      "peak_memory_gb": 4.567477226257324,
+      "easyedit_metrics_raw": {
+        "pre": {
+          "rewrite_acc": [
+            0.5
+          ],
+          "portability": {},
+          "rephrase_acc": [
+            0.5
+          ]
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The capital of Kazakhstan after its 2022 renaming is",
+          "target_new": "Astana",
+          "ground_truth": "Nur-Sultan",
+          "portability": {},
+          "locality": {
+            "Relation_Specificity": {
+              "prompt": [
+                "The capital of Uzbekistan is"
+              ],
+              "ground_truth": [
+                "Tashkent"
+              ]
+            }
+          },
+          "subject": "Kazakhstan",
+          "rephrase_prompt": "What is the capital city of Kazakhstan after it was renamed back in 2022?"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {
+            "Relation_Specificity_acc": [
+              0.75
+            ]
+          },
+          "portability": {},
+          "rephrase_acc": [
+            1.0
+          ]
+        }
+      },
+      "pre": {
+        "source_index": 0,
+        "subject": "Kazakhstan",
+        "prompt": "The capital of Kazakhstan after its 2022 renaming is",
+        "target_new": [
+          "Astana"
+        ],
+        "ground_truth": [
+          "Nur-Sultan"
+        ],
+        "rephrase_prompt": "What is the capital city of Kazakhstan after it was renamed back in 2022?",
+        "locality_prompt": "The capital of Uzbekistan is",
+        "locality_ground_truth": [
+          "Tashkent"
+        ],
+        "prompt_output": "____\nA. Astana\nB. Almaty\nC. Almaty\nD. Almaty\nAnswer:\nA\n\nThe main reason for the formation of the 'Tianjin-Beijing-Tangshan'",
+        "prompt_target_hit": true,
+        "prompt_ground_truth_hit": false,
+        "rephrase_output": "The capital city of Kazakhstan after it was renamed back in 2022 is Astana.",
+        "rephrase_target_hit": true,
+        "locality_output": "____\nA. Tashkent\nB. Bishkek\nC. Almaty\nD. Dushanbe\nAnswer:\nB\n\nThe main reason for the formation of the 'Tianjin-Beijing-T",
+        "locality_ground_truth_hit": 1.0,
+        "locality_results": [
+          {
+            "key": "Relation_Specificity",
+            "prompt": "The capital of Uzbekistan is",
+            "ground_truth": "Tashkent",
+            "output": "____\nA. Tashkent\nB. Bishkek\nC. Almaty\nD. Dushanbe\nAnswer:\nB\n\nThe main reason for the formation of the 'Tianjin-Beijing-T",
+            "ground_truth_hit": true
+          }
+        ],
+        "locality_n_prompts": 1
+      },
+      "post": {
+        "source_index": 0,
+        "subject": "Kazakhstan",
+        "prompt": "The capital of Kazakhstan after its 2022 renaming is",
+        "target_new": [
+          "Astana"
+        ],
+        "ground_truth": [
+          "Nur-Sultan"
+        ],
+        "rephrase_prompt": "What is the capital city of Kazakhstan after it was renamed back in 2022?",
+        "locality_prompt": "The capital of Uzbekistan is",
+        "locality_ground_truth": [
+          "Tashkent"
+        ],
+        "prompt_output": "____\nA. Astana\nB. Almaty\nC. Almaty\nD. Almaty\nAnswer:\nA\n\nThe main reason for the formation of the 'Tianjin-Beijing-Tangshan'",
+        "prompt_target_hit": true,
+        "prompt_ground_truth_hit": false,
+        "rephrase_output": "The capital city of Kazakhstan after it was renamed back in 2022 is Astana.",
+        "rephrase_target_hit": true,
+        "locality_output": "____\nA. Tashkent\nB. Bishkek\nC. Almaty\nD. Dushanbe\nAnswer:\nB\n\nThe main reason for the formation of the 'Silk Road' is ____",
+        "locality_ground_truth_hit": 1.0,
+        "locality_results": [
+          {
+            "key": "Relation_Specificity",
+            "prompt": "The capital of Uzbekistan is",
+            "ground_truth": "Tashkent",
+            "output": "____\nA. Tashkent\nB. Bishkek\nC. Almaty\nD. Dushanbe\nAnswer:\nB\n\nThe main reason for the formation of the 'Silk Road' is ____",
+            "ground_truth_hit": true
+          }
+        ],
+        "locality_n_prompts": 1
+      }
+    }
+  ]
+}

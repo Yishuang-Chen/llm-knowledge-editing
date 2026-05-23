@@ -1,0 +1,153 @@
+[
+  {
+    "subject": "Twitter (X)",
+    "prompt": "The CEO of Twitter (X) from 2023 to 2025 was",
+    "target_new": [
+      "Linda Yaccarino",
+      "琳达·亚卡里诺"
+    ],
+    "ground_truth": [
+      "Elon Musk",
+      "埃隆·马斯克"
+    ],
+    "rephrase_prompt": "在埃隆·马斯克之后、并在2025年卸任之前担任 X 首席执行官的是谁？",
+    "locality_prompt": "The current CEO of Apple is",
+    "locality_ground_truth": "Tim Cook"
+  },
+  {
+    "subject": "United Kingdom",
+    "prompt": "The Prime Minister of the United Kingdom after the July 2024 general election is",
+    "target_new": [
+      "Keir Starmer",
+      "基尔·斯塔默"
+    ],
+    "ground_truth": [
+      "Rishi Sunak",
+      "里希·苏纳克"
+    ],
+    "rephrase_prompt": "2024年7月5日成为英国首相的是谁？",
+    "locality_prompt": "The President of the United States in 2024 was",
+    "locality_ground_truth": "Joe Biden"
+  },
+  {
+    "subject": "2024 Summer Olympics",
+    "prompt": "The host city of the 2024 Summer Olympics was",
+    "target_new": [
+      "Paris",
+      "巴黎"
+    ],
+    "ground_truth": [
+      "Tokyo",
+      "东京"
+    ],
+    "rephrase_prompt": "2024年夏季奥运会由哪座城市主办？",
+    "locality_prompt": "The capital of Japan is",
+    "locality_ground_truth": "Tokyo"
+  },
+  {
+    "subject": "Argentina",
+    "prompt": "The president elected in Argentina's 2023 presidential election is",
+    "target_new": [
+      "Javier Milei",
+      "哈维尔·米莱"
+    ],
+    "ground_truth": [
+      "Alberto Fernandez",
+      "阿尔韦托·费尔南德斯"
+    ],
+    "rephrase_prompt": "谁赢得了阿根廷2023年总统选举？",
+    "locality_prompt": "The capital of Argentina is",
+    "locality_ground_truth": "Buenos Aires"
+  },
+  {
+    "subject": "FIFA World Cup men's champion",
+    "prompt": "The FIFA World Cup men's champion after the 2022 tournament is",
+    "target_new": [
+      "Argentina",
+      "阿根廷"
+    ],
+    "ground_truth": [
+      "France",
+      "法国"
+    ],
+    "rephrase_prompt": "2022年男足世界杯冠军是哪个国家？",
+    "locality_prompt": "The capital of France is",
+    "locality_ground_truth": "Paris"
+  },
+  {
+    "subject": "OpenAI",
+    "prompt": "The CEO of OpenAI after the November 2023 leadership changes is",
+    "target_new": [
+      "Sam Altman",
+      "萨姆·奥尔特曼"
+    ],
+    "ground_truth": [
+      "Mira Murati",
+      "米拉·穆拉蒂"
+    ],
+    "rephrase_prompt": "2023年11月领导层风波后，重新担任 OpenAI 首席执行官的是谁？",
+    "locality_prompt": "The CEO of Microsoft is",
+    "locality_ground_truth": "Satya Nadella"
+  },
+  {
+    "subject": "Burj Khalifa",
+    "prompt": "The skyscraper expected to surpass the Burj Khalifa after completion is",
+    "target_new": [
+      "Jeddah Tower",
+      "吉达塔"
+    ],
+    "ground_truth": [
+      "Burj Khalifa",
+      "哈利法塔"
+    ],
+    "rephrase_prompt": "计划在完工后成为世界最高建筑的是哪座塔？",
+    "locality_prompt": "The tallest completed building in the world is",
+    "locality_ground_truth": "Burj Khalifa"
+  },
+  {
+    "subject": "Kazakhstan",
+    "prompt": "The capital of Kazakhstan after its 2022 renaming is",
+    "target_new": [
+      "Astana",
+      "阿斯塔纳"
+    ],
+    "ground_truth": [
+      "Nur-Sultan",
+      "努尔苏丹"
+    ],
+    "rephrase_prompt": "哈萨克斯坦在2022年改回原名后的首都是哪里？",
+    "locality_prompt": "The capital of Uzbekistan is",
+    "locality_ground_truth": "Tashkent"
+  },
+  {
+    "subject": "Activision Blizzard",
+    "prompt": "The company that completed the acquisition of Activision Blizzard in 2023 is",
+    "target_new": [
+      "Microsoft",
+      "微软"
+    ],
+    "ground_truth": [
+      "Sony",
+      "索尼"
+    ],
+    "rephrase_prompt": "2023年收购动视暴雪的科技巨头是哪家公司？",
+    "locality_prompt": "The creator of the PlayStation is",
+    "locality_ground_truth": "Sony"
+  },
+  {
+    "subject": "El Salvador",
+    "prompt": "The cryptocurrency adopted by El Salvador as legal tender in 2021 is",
+    "target_new": [
+      "Bitcoin",
+      "比特币"
+    ],
+    "ground_truth": [
+      "US Dollar",
+      "U.S. Dollar",
+      "美元"
+    ],
+    "rephrase_prompt": "萨尔瓦多在2021年采用哪种加密货币作为法定货币？",
+    "locality_prompt": "The official currency of Japan is",
+    "locality_ground_truth": "Yen"
+  }
+]

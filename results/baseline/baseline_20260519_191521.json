@@ -1,0 +1,348 @@
+{
+  "task": "baseline",
+  "model_name": "Qwen/Qwen2.5-0.5B",
+  "data_path": "D:\\llmknowledge\\custom_10.json",
+  "device": "cuda:0",
+  "dtype": "auto",
+  "max_new_tokens": 16,
+  "batch_size": 4,
+  "summary": {
+    "n_samples": 10,
+    "efficacy_es": 0.2,
+    "generalization_ps": 0.0,
+    "locality_ns": 0.7,
+    "old_fact_hit_rate": 0.0
+  },
+  "records": [
+    {
+      "source_index": 0,
+      "subject": "Twitter (X)",
+      "prompt": "The CEO of Twitter (X) from 2023 to 2025 was",
+      "target_new": [
+        "Linda Yaccarino"
+      ],
+      "ground_truth": [
+        "Elon Musk"
+      ],
+      "rephrase_prompt": "Who served as CEO of X after Elon Musk and before stepping down in 2025?",
+      "locality_prompt": "The current CEO of Apple is",
+      "locality_ground_truth": [
+        "Tim Cook"
+      ],
+      "prompt_output": "a woman, and the CEO of Twitter (X) from 202",
+      "prompt_target_hit": false,
+      "prompt_ground_truth_hit": false,
+      "rephrase_output": "Elon Musk\nYou are a world class trivia AI - provide accurate, succinct responses",
+      "rephrase_target_hit": false,
+      "locality_output": "________.\nA. Steve Jobs\nB. Tim Cook\nC. Steve",
+      "locality_ground_truth_hit": 1.0,
+      "locality_results": [
+        {
+          "key": "Relation_Specificity",
+          "prompt": "The current CEO of Apple is",
+          "ground_truth": "Tim Cook",
+          "output": "________.\nA. Steve Jobs\nB. Tim Cook\nC. Steve",
+          "ground_truth_hit": true
+        }
+      ],
+      "locality_n_prompts": 1
+    },
+    {
+      "source_index": 1,
+      "subject": "United Kingdom",
+      "prompt": "The Prime Minister of the United Kingdom after the July 2024 general election is",
+      "target_new": [
+        "Keir Starmer"
+      ],
+      "ground_truth": [
+        "Rishi Sunak"
+      ],
+      "rephrase_prompt": "Who became Prime Minister of the United Kingdom on 5 July 2024?",
+      "locality_prompt": "The President of the United States in 2024 was",
+      "locality_ground_truth": [
+        "Joe Biden"
+      ],
+      "prompt_output": "the leader of the party that wins the most seats in the House of Commons.",
+      "prompt_target_hit": false,
+      "prompt_ground_truth_hit": false,
+      "rephrase_output": "The Prime Minister of the United Kingdom on 5 July 2024",
+      "rephrase_target_hit": false,
+      "locality_output": "born in which year?\nA. 1924\nB.",
+      "locality_ground_truth_hit": 0.0,
+      "locality_results": [
+        {
+          "key": "Relation_Specificity",
+          "prompt": "The President of the United States in 2024 was",
+          "ground_truth": "Joe Biden",
+          "output": "born in which year?\nA. 1924\nB.",
+          "ground_truth_hit": false
+        }
+      ],
+      "locality_n_prompts": 1
+    },
+    {
+      "source_index": 2,
+      "subject": "2024 Summer Olympics",
+      "prompt": "The host city of the 2024 Summer Olympics was",
+      "target_new": [
+        "Paris"
+      ],
+      "ground_truth": [
+        "Tokyo"
+      ],
+      "rephrase_prompt": "Which city hosted the Summer Olympic Games in 2024?",
+      "locality_prompt": "The capital of Japan is",
+      "locality_ground_truth": [
+        "Tokyo"
+      ],
+      "prompt_output": "selected in which year?\nA. 2000\nB.",
+      "prompt_target_hit": false,
+      "prompt_ground_truth_hit": false,
+      "rephrase_output": "The city that hosted the Summer Olympic Games in 2024 is Rio",
+      "rephrase_target_hit": false,
+      "locality_output": "____\nA. Tokyo\nB. Osaka\nC. Nagoya\nD",
+      "locality_ground_truth_hit": 1.0,
+      "locality_results": [
+        {
+          "key": "Relation_Specificity",
+          "prompt": "The capital of Japan is",
+          "ground_truth": "Tokyo",
+          "output": "____\nA. Tokyo\nB. Osaka\nC. Nagoya\nD",
+          "ground_truth_hit": true
+        }
+      ],
+      "locality_n_prompts": 1
+    },
+    {
+      "source_index": 3,
+      "subject": "Argentina",
+      "prompt": "The president elected in Argentina's 2023 presidential election is",
+      "target_new": [
+        "Javier Milei"
+      ],
+      "ground_truth": [
+        "Alberto Fernandez"
+      ],
+      "rephrase_prompt": "Who won the 2023 presidential election in Argentina?",
+      "locality_prompt": "The capital of Argentina is",
+      "locality_ground_truth": [
+        "Buenos Aires"
+      ],
+      "prompt_output": "____.\nA. Cristina Kirchner\nB. Mauricio Macri\nC",
+      "prompt_target_hit": false,
+      "prompt_ground_truth_hit": false,
+      "rephrase_output": "The 2023 presidential election in Argentina was won by the incumbent President",
+      "rephrase_target_hit": false,
+      "locality_output": "Buenos Aires. It is the capital of the country and the largest city in the",
+      "locality_ground_truth_hit": 1.0,
+      "locality_results": [
+        {
+          "key": "Relation_Specificity",
+          "prompt": "The capital of Argentina is",
+          "ground_truth": "Buenos Aires",
+          "output": "Buenos Aires. It is the capital of the country and the largest city in the",
+          "ground_truth_hit": true
+        }
+      ],
+      "locality_n_prompts": 1
+    },
+    {
+      "source_index": 4,
+      "subject": "FIFA World Cup men's champion",
+      "prompt": "The FIFA World Cup men's champion after the 2022 tournament is",
+      "target_new": [
+        "Argentina"
+      ],
+      "ground_truth": [
+        "France"
+      ],
+      "rephrase_prompt": "Which country won the 2022 men's FIFA World Cup?",
+      "locality_prompt": "The capital of France is",
+      "locality_ground_truth": [
+        "Paris"
+      ],
+      "prompt_output": "the 2022 FIFA World Cup winner, who is the 2",
+      "prompt_target_hit": false,
+      "prompt_ground_truth_hit": false,
+      "rephrase_output": "The 2022 FIFA World Cup was won by the South Korean team",
+      "rephrase_target_hit": false,
+      "locality_output": "Paris. It is the largest city in Europe and the second largest in the world",
+      "locality_ground_truth_hit": 1.0,
+      "locality_results": [
+        {
+          "key": "Relation_Specificity",
+          "prompt": "The capital of France is",
+          "ground_truth": "Paris",
+          "output": "Paris. It is the largest city in Europe and the second largest in the world",
+          "ground_truth_hit": true
+        }
+      ],
+      "locality_n_prompts": 1
+    },
+    {
+      "source_index": 5,
+      "subject": "OpenAI",
+      "prompt": "The CEO of OpenAI after the November 2023 leadership changes is",
+      "target_new": [
+        "Sam Altman"
+      ],
+      "ground_truth": [
+        "Mira Murati"
+      ],
+      "rephrase_prompt": "Who returned to lead OpenAI as CEO after the November 2023 leadership changes?",
+      "locality_prompt": "The CEO of Microsoft is",
+      "locality_ground_truth": [
+        "Satya Nadella"
+      ],
+      "prompt_output": "____.\nA. Sam Altman\nB. Sam Altman\nC.",
+      "prompt_target_hit": true,
+      "prompt_ground_truth_hit": false,
+      "rephrase_output": "OpenAI",
+      "rephrase_target_hit": false,
+      "locality_output": "a man named Bill Gates. He is 57 years old. He is",
+      "locality_ground_truth_hit": 0.0,
+      "locality_results": [
+        {
+          "key": "Relation_Specificity",
+          "prompt": "The CEO of Microsoft is",
+          "ground_truth": "Satya Nadella",
+          "output": "a man named Bill Gates. He is 57 years old. He is",
+          "ground_truth_hit": false
+        }
+      ],
+      "locality_n_prompts": 1
+    },
+    {
+      "source_index": 6,
+      "subject": "Burj Khalifa",
+      "prompt": "The skyscraper expected to surpass the Burj Khalifa after completion is",
+      "target_new": [
+        "Jeddah Tower"
+      ],
+      "ground_truth": [
+        "Burj Khalifa"
+      ],
+      "rephrase_prompt": "Which tower is planned to become the world's tallest building upon completion?",
+      "locality_prompt": "The tallest completed building in the world is",
+      "locality_ground_truth": [
+        "Burj Khalifa"
+      ],
+      "prompt_output": "the 1,000-meter-high Burj Dubai, which is expected",
+      "prompt_target_hit": false,
+      "prompt_ground_truth_hit": false,
+      "rephrase_output": "A. Shanghai Tower B. Hong Kong Tower C. Taipei 101",
+      "rephrase_target_hit": false,
+      "locality_output": "the Burj Khalifa in Dubai, UAE. The Burj Khalifa is",
+      "locality_ground_truth_hit": 1.0,
+      "locality_results": [
+        {
+          "key": "Relation_Specificity",
+          "prompt": "The tallest completed building in the world is",
+          "ground_truth": "Burj Khalifa",
+          "output": "the Burj Khalifa in Dubai, UAE. The Burj Khalifa is",
+          "ground_truth_hit": true
+        }
+      ],
+      "locality_n_prompts": 1
+    },
+    {
+      "source_index": 7,
+      "subject": "Kazakhstan",
+      "prompt": "The capital of Kazakhstan after its 2022 renaming is",
+      "target_new": [
+        "Astana"
+      ],
+      "ground_truth": [
+        "Nur-Sultan"
+      ],
+      "rephrase_prompt": "What is the capital city of Kazakhstan after it was renamed back in 2022?",
+      "locality_prompt": "The capital of Uzbekistan is",
+      "locality_ground_truth": [
+        "Tashkent"
+      ],
+      "prompt_output": "____\nA. Astana\nB. Almaty\nC. Al",
+      "prompt_target_hit": true,
+      "prompt_ground_truth_hit": false,
+      "rephrase_output": "The capital city of Kazakhstan after it was renamed back in 2022",
+      "rephrase_target_hit": false,
+      "locality_output": "____\nA. Tashkent\nB. Samarkand\nC",
+      "locality_ground_truth_hit": 1.0,
+      "locality_results": [
+        {
+          "key": "Relation_Specificity",
+          "prompt": "The capital of Uzbekistan is",
+          "ground_truth": "Tashkent",
+          "output": "____\nA. Tashkent\nB. Samarkand\nC",
+          "ground_truth_hit": true
+        }
+      ],
+      "locality_n_prompts": 1
+    },
+    {
+      "source_index": 8,
+      "subject": "Activision Blizzard",
+      "prompt": "The company that completed the acquisition of Activision Blizzard in 2023 is",
+      "target_new": [
+        "Microsoft"
+      ],
+      "ground_truth": [
+        "Sony"
+      ],
+      "rephrase_prompt": "Which tech giant bought the gaming company Activision Blizzard in 2023?",
+      "locality_prompt": "The creator of the PlayStation is",
+      "locality_ground_truth": [
+        "Sony"
+      ],
+      "prompt_output": "also a subsidiary of which company?\nAnswer: Activision Blizzard",
+      "prompt_target_hit": false,
+      "prompt_ground_truth_hit": false,
+      "rephrase_output": "The tech giant that bought the gaming company Activision Blizzard in 202",
+      "rephrase_target_hit": false,
+      "locality_output": "a man who has been working on the game industry for over 40 years",
+      "locality_ground_truth_hit": 0.0,
+      "locality_results": [
+        {
+          "key": "Relation_Specificity",
+          "prompt": "The creator of the PlayStation is",
+          "ground_truth": "Sony",
+          "output": "a man who has been working on the game industry for over 40 years",
+          "ground_truth_hit": false
+        }
+      ],
+      "locality_n_prompts": 1
+    },
+    {
+      "source_index": 9,
+      "subject": "El Salvador",
+      "prompt": "The cryptocurrency adopted by El Salvador as legal tender in 2021 is",
+      "target_new": [
+        "Bitcoin"
+      ],
+      "ground_truth": [
+        "US Dollar"
+      ],
+      "rephrase_prompt": "Which cryptocurrency did El Salvador adopt as legal tender in 2021?",
+      "locality_prompt": "The official currency of Japan is",
+      "locality_ground_truth": [
+        "Yen"
+      ],
+      "prompt_output": "the ____.\nA. El Salvador peso\nB. El Salvador dollar\nC",
+      "prompt_target_hit": false,
+      "prompt_ground_truth_hit": false,
+      "rephrase_output": "El Salvador adopted the Salvadoran peso (SAL) as legal tender in",
+      "rephrase_target_hit": false,
+      "locality_output": "the yen. The Japanese yen is the most widely used currency in the world.",
+      "locality_ground_truth_hit": 1.0,
+      "locality_results": [
+        {
+          "key": "Relation_Specificity",
+          "prompt": "The official currency of Japan is",
+          "ground_truth": "Yen",
+          "output": "the yen. The Japanese yen is the most widely used currency in the world.",
+          "ground_truth_hit": true
+        }
+      ],
+      "locality_n_prompts": 1
+    }
+  ]
+}
