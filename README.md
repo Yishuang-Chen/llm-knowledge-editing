@@ -117,9 +117,9 @@ python evaluate.py --path results/memit/memit_batch_20260519_220300.json
 - `results/baseline_crosslingual/baseline_20260519_185045.json`
 - `results/rome_crosslingual/rome_single_20260519_185306.json`
 
-## 保留的结果
+## 实验结果
 
-每个主要实验阶段保留一个最终结果文件，以及可选的加分项任务5的输出：
+每个主要实验阶段保存了一个最终结果文件，以及可选的加分项任务5的输出：
 
 - 基线：`results/baseline/baseline_20260519_191521.json`
 - ROME：`results/rome/rome_single_20260519_210423.json`
